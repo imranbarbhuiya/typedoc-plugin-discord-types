@@ -17,8 +17,6 @@
 		"docs": "typedoc",
 		"lint": "eslint src tests --ext ts --fix",
 		"format": "prettier --write \"{src,tests}/**/*.ts\"",
-		"test": "jest",
-		"test:watch": "jest --watch",
 		"update": "yarn upgrade-interactive",
 		"build": "tsup && tsc -b src",
 		"typecheck": "tsc -p tsconfig.typecheck.json",
@@ -28,7 +26,7 @@
 		"postinstall": "husky install .github/husky",
 		"postpack": "pinst --enable"
 	},
-	"keywords":  [
+	"keywords": [
 		"typedoc",
 		"typedocplugin",
 		"typedoc-plugin",
@@ -53,7 +51,6 @@
 		"@favware/rollup-type-bundler": "^1.0.7",
 		"@sapphire/eslint-config": "^4.3.6",
 		"@sapphire/prettier-config": "^1.4.3",
-		"@types/jest": "^28.1.1",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"cz-conventional-changelog": "^3.3.0",
@@ -61,12 +58,10 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"husky": "^8.0.1",
-		"jest": "^28.1.0",
 		"lint-staged": "^13.0.0",
 		"pinst": "^3.0.0",
 		"prettier": "^2.6.2",
 		"pretty-quick": "^3.1.3",
-		"ts-jest": "^28.0.4",
 		"tsup": "^6.0.1",
 		"typedoc": "^0.22.17",
 		"typescript": "^4.7.3"

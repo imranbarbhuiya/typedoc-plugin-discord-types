@@ -5,8 +5,7 @@ typedoc-plugin-discord-types
 **Adds support for linking to discord-api-types.dev types to TypeDoc.**
 
 [![GitHub](https://img.shields.io/github/license/imranbarbhuiya/typedoc-plugin-discord-types)](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/blob/main/LICENSE)
-[![codecov](https://codecov.io/gh/imranbarbhuiya/typedoc-plugin-discord-types/branch/main/graph/badge.svg?token=token)](https://codecov.io/gh/imranbarbhuiya/typedoc-plugin-discord-types)
-[![npm](https://img.shields.io/npm/v/typedoc-plugin-discord-types?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/typedoc-plugin-discord-types)
+[![npm](https://img.shields.io/npm/v/typedoc-plugin-discord-types?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/typedoc-plugin-discord-types
 
 </div>
 
