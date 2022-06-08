@@ -76,12 +76,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/imranbarbhuiya/template.git"
+		"url": "git+https://github.com/imranbarbhuiya/typedoc-plugin-discord-types.git"
 	},
 	"bugs": {
-		"url": "https://github.com/imranbarbhuiya/template/issues"
+		"url": "https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/issues"
 	},
-	"homepage": "https://template.js.org/",
+	"homepage": "https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/",
 	"commitlint": {
 		"extends": [
 			"@commitlint/config-conventional"
