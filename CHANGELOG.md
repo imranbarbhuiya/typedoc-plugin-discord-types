@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+# [1.0.2](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/compare/v1.0.1...v1.0.2) - (2022-06-08)
+
+## 🐛 Bug Fixes
+
+- Use function ([d6a1340](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/commit/d6a1340c23f4b4a095c43a7fcec5e03043710972))
+
 # [1.0.1](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/compare/v1.0.0...v1.0.1) - (2022-06-08)
 
 ## 🐛 Bug Fixes
