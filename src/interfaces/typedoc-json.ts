@@ -4,6 +4,6 @@ interface IDiscordAPIDocEntry {
 }
 
 export interface IDiscordAPIDoc {
-	Interfaces: IDiscordAPIDocEntry[];
-	Enumerations: IDiscordAPIDocEntry[];
+	interfaces: IDiscordAPIDocEntry[];
+	enums: IDiscordAPIDocEntry[];
 }
