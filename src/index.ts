@@ -16,7 +16,7 @@ export const load = async (app: Application) => {
 
 	for (const version of allExports)
 		app.renderer.addUnknownSymbolResolver(`discord-api-types/${version}`, (name) => {
-			const [doc, baseURL] = getData(data.children!, 'v10');
+			const [doc, baseURL] = getData(data.children!, version);
 			if (doc.constants.find((c) => c.name === name)) {
 				return `${baseURL}/${name}`;
 			}

@@ -18,7 +18,7 @@ export const allExports = [
 	'v8',
 	'v9',
 	'voice/v4'
-];
+] as const;
 
 export const getData = (moduleChildren: JSONOutput.DeclarationReflection[], path: typeof allExports[number]): [IDiscordAPIDoc, string] => {
 	const data = moduleChildren.find((child) => child.name === path)!;
