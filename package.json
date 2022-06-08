@@ -1,6 +1,6 @@
 {
 	"name": "typedoc-plugin-discord-types",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Adds support for linking to discord-api-types.dev types to TypeDoc.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",

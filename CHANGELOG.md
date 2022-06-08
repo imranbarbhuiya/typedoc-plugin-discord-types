@@ -1,4 +1,13 @@
 # Changelog
+All notable changes to this project will be documented in this file.
+
+# [1.0.1](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/compare/v1.0.0...v1.0.1) - (2022-06-08)
+
+## 🐛 Bug Fixes
+
+- Wrong version ([b8c2bf2](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/commit/b8c2bf28a2240f73c4fe0dcebb62ba8c0b31cd83))
+
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
