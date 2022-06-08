@@ -1,31 +1,7 @@
 import { type JSONOutput, ReflectionKind } from 'typedoc';
 import type { IDiscordAPIDoc } from './interfaces/typedoc-json';
 
-export const allExports = [
-	'gateway/common',
-	'globals',
-	'payloads/common',
-	'rest/common',
-	'rpc/common',
-	'rpc/v10',
-	'rpc/v8',
-	'rpc/v9',
-	'utils/v10',
-	'utils/v8',
-	'utils/v9',
-	'v10',
-	'v6',
-	'v8',
-	'v9',
-	'voice/v4'
-] as const;
-
-export const getData = (moduleChildren: JSONOutput.DeclarationReflection[], path: typeof allExports[number]): [IDiscordAPIDoc, string] => {
-	const data = moduleChildren.find((child) => child.name === path)!;
-
-	const { children = [] } = data;
-
-	//
+export const getData = (children: JSONOutput.DeclarationReflection[], path: string): [IDiscordAPIDoc, string] => {
 	const constants = children
 		.filter((child) => child.kind === ReflectionKind.Variable)
 		.map((child) => ({ name: child.name, description: child.comment?.shortText }));

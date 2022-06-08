@@ -1,6 +1,6 @@
 import type { Application, JSONOutput } from 'typedoc';
 import { request } from 'undici';
-import { allExports, getData } from './getData';
+import { getData } from './getData';
 
 export async function load(app: Application) {
 	const res = await request(
@@ -14,9 +14,9 @@ export async function load(app: Application) {
 
 	const data = (await res.body.json()) as JSONOutput.ProjectReflection;
 
-	for (const version of allExports)
-		app.renderer.addUnknownSymbolResolver(`discord-api-types/${version}`, (name) => {
-			const [doc, baseURL] = getData(data.children!, version);
+	for (const child of data.children ?? [])
+		app.renderer.addUnknownSymbolResolver(`discord-api-types/${child.name}`, (name) => {
+			const [doc, baseURL] = getData(child.children ?? [], child.name);
 			if (doc.constants.find((c) => c.name === name)) {
 				return `${baseURL}/${name}`;
 			}
