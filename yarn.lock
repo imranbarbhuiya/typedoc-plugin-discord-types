@@ -5005,6 +5005,9 @@ __metadata:
     tsup: ^6.0.1
     typedoc: ^0.22.17
     typescript: ^4.7.3
+    undici: ^5.4.0
+  peerDependencies:
+    typedoc: ^0.22.x
   languageName: unknown
   linkType: soft
 
@@ -5102,6 +5105,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 137d18a77f52254a284960b16ab53d0619f57b69b5d585804b8413f798a1175ce3e774fb95e6a101868577aafe357d8fcfc9171f0dc9fc0c210e9ae59d107cc0
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "undici@npm:5.4.0"
+  checksum: 2852397ee1dbb2b3ad58166520ec30f4f0143895f6e7b157dbedfac4e43b522a710a3927be61a67b2ae791190973f206d30785564ece7675e08133427cebaaa1
   languageName: node
   linkType: hard
 
