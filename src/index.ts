@@ -2,7 +2,7 @@ import type { Application, JSONOutput } from 'typedoc';
 import { request } from 'undici';
 import { allExports, getData } from './getData';
 
-export const load = async (app: Application) => {
+export async function load(app: Application) {
 	const res = await request(
 		'https://raw.githubusercontent.com/discordjs/discord-api-types/main/website/versioned_docs/version-0.33.5/api-typedoc.json'
 	);
@@ -32,4 +32,4 @@ export const load = async (app: Application) => {
 
 			return undefined;
 		});
-};
+}
