@@ -1,8 +1,6 @@
 import type { Application, JSONOutput } from 'typedoc';
 import { request } from 'undici';
-import type { IDiscordAPIDoc } from './interfaces/typedoc-json';
-
-const availableVersions = ['v6', 'v8', 'v9', 'v10'];
+import { allExports, getData } from './getData';
 
 export const load = async (app: Application) => {
 	const res = await request(
@@ -16,20 +14,20 @@ export const load = async (app: Application) => {
 
 	const data = (await res.body.json()) as JSONOutput.ProjectReflection;
 
-	const { kind, kindString = 'Unknown', children = [] } = data;
-
-	const doc: IDiscordAPIDoc = children.map((child) => {});
-
-	const baseURL = (v: typeof availableVersions[number]) => `https://discord-api-types.dev/api/discord-api-types-${v}/`;
-
-	for (const version of availableVersions)
+	for (const version of allExports)
 		app.renderer.addUnknownSymbolResolver(`discord-api-types/${version}`, (name) => {
-			const versionedBaseURL = baseURL(version);
-			if (doc.interfaces.find((c) => c.name === name)) {
-				return `${versionedBaseURL}/interface/${name}`;
+			const [doc, baseURL] = getData(data.children!, 'v10');
+			if (doc.constants.find((c) => c.name === name)) {
+				return `${baseURL}/${name}`;
 			}
 			if (doc.enums.find((c) => c.name === name)) {
-				return `${versionedBaseURL}/enum/${name}`;
+				return `${baseURL}/enum/${name}`;
+			}
+			if (doc.interfaces.find((c) => c.name === name)) {
+				return `${baseURL}/interface/${name}`;
+			}
+			if (doc.typeAliases.find((c) => c.name === name)) {
+				return `${baseURL}/${name}`;
 			}
 
 			return undefined;

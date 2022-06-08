@@ -1,9 +1,11 @@
 interface IDiscordAPIDocEntry {
 	name: string;
-	description: string;
+	description: string | undefined;
 }
 
 export interface IDiscordAPIDoc {
-	interfaces: IDiscordAPIDocEntry[];
+	constants: IDiscordAPIDocEntry[];
 	enums: IDiscordAPIDocEntry[];
+	interfaces: IDiscordAPIDocEntry[];
+	typeAliases: IDiscordAPIDocEntry[];
 }
