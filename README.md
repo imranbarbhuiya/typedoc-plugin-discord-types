@@ -1,56 +1,27 @@
 <div align="center">
 
-# @imranbarbhuiya/template
+typedoc-plugin-discord-types
 
-**Template for Parbez's Repositories.**
+**Adds support for linking to discord-api-types.dev types to TypeDoc.**
 
-[![GitHub](https://img.shields.io/github/license/imranbarbhuiya/package-template)](https://github.com/imranbarbhuiya/package-template/blob/main/LICENSE)
-[![codecov](https://codecov.io/gh/imranbarbhuiya/template/branch/main/graph/badge.svg?token=token)](https://codecov.io/gh/imranbarbhuiya/template)
-[![npm](https://img.shields.io/npm/v/@imranbarbhuiya/template?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/@imranbarbhuiya/template)
+[![GitHub](https://img.shields.io/github/license/imranbarbhuiya/typedoc-plugin-discord-types)](https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/blob/main/LICENSE)
+[![codecov](https://codecov.io/gh/imranbarbhuiya/typedoc-plugin-discord-types/branch/main/graph/badge.svg?token=token)](https://codecov.io/gh/imranbarbhuiya/typedoc-plugin-discord-types)
+[![npm](https://img.shields.io/npm/v/typedoc-plugin-discord-types?color=crimson&logo=npm&style=flat-square)](https://www.npmjs.com/package/typedoc-plugin-discord-types)
 
 </div>
 
-## Steps after creating a repo with this template
-
-1. Find and replace all instances of `template` with the package name.
-2. remove `true ||` from workflows
-3. Ensure branch protection is on
-4. Enable Codecov for the repository
-5. Remove this section from the README
-
-## Description
-
-A description of the package.
-
-Read Full Documentation [here](https://template.js.org/).
-
-## Features
-
--   Written In Typescript
--   Offers CJS, ESM and UMD builds
--   Full TypeScript & JavaScript support
-
 ## Install
 
-```bash
-# npm
-# TODO: change name
-npm i template
+You can use the following command to install this package, or replace `npm install -D` with your package manager of choice.
 
-# yarn
-yarn add template
+```bash
+npm install -D typedoc-plugin-discord-types
 
 ```
 
 ## Usage
 
-**Note:** While examples uses `import`, it maps 1:1 with CommonJS' require syntax. For example, `import { package } from 'package-name'` is the same as `const { mahrin } = require('template')`.
-
-```ts
-import { mahrin } from 'template';
-```
-
-### Some contents goes here //TODO
+After installation plugin automatically loads and creates links to discord-api-types documentation.
 
 ## Buy me some doughnuts
 
@@ -68,7 +39,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/imranbarbhuiya"><img src="https://avatars.githubusercontent.com/u/74945038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Parbez</b></sub></a><br /><a href="https://github.com/imranbarbhuiya/package-template/commits?author=imranbarbhuiya" title="Code">💻</a> <a href="#maintenance-imranbarbhuiya" title="Maintenance">🚧</a> <a href="#ideas-imranbarbhuiya" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/imranbarbhuiya"><img src="https://avatars.githubusercontent.com/u/74945038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Parbez</b></sub></a><br /><a href="https://github.com/imranbarbhuiya/typedoc-plugin-discord-types/commits?author=imranbarbhuiya" title="Code">💻</a> <a href="#maintenance-imranbarbhuiya" title="Maintenance">🚧</a> <a href="#ideas-imranbarbhuiya" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://renovate.whitesourcesoftware.com"><img src="https://avatars.githubusercontent.com/u/25180681?v=4?s=100" width="100px;" alt=""/><br /><sub><b>WhiteSource Renovate</b></sub></a><br /><a href="#maintenance-renovate-bot" title="Maintenance">🚧</a></td>
   </tr>
 </table>

@@ -1,11 +1,9 @@
 {
-	"name": "@imranbarbhuiya/template",
-	"version": "0.0.0",
-	"description": "Package description.",
+	"name": "typedoc-plugin-discord-types",
+	"version": "0.0.1",
+	"description": "Adds support for linking to discord-api-types.dev types to TypeDoc.",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
-	"browser": "dist/index.global.js",
-	"unpkg": "dist/index.global.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		"import": "./dist/index.mjs",
@@ -30,8 +28,19 @@
 		"postinstall": "husky install .github/husky",
 		"postpack": "pinst --enable"
 	},
-	"keywords": [
-		"some keywords"
+	"keywords":  [
+		"typedoc",
+		"typedocplugin",
+		"typedoc-plugin",
+		"typescript",
+		"ts",
+		"yarn",
+		"discord",
+		"discordtype",
+		"discordapi",
+		"dapi",
+		"d-types",
+		"discord-types"
 	],
 	"publishConfig": {
 		"access": "public"
