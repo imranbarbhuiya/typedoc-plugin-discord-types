@@ -50,10 +50,10 @@
 		"@favware/rollup-type-bundler": "^1.0.9",
 		"@sapphire/eslint-config": "^4.3.7",
 		"@sapphire/prettier-config": "^1.4.3",
-		"@typescript-eslint/eslint-plugin": "^5.30.5",
-		"@typescript-eslint/parser": "^5.30.5",
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.19.0",
+		"eslint": "^8.20.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.1",
@@ -101,6 +101,6 @@
 	"packageManager": "yarn@3.2.1",
 	"prettier": "@sapphire/prettier-config",
 	"dependencies": {
-		"undici": "^5.6.1"
+		"undici": "^5.7.0"
 	}
 }
